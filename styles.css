@@ -135,3 +135,13 @@ h2 {
     width: 100%;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* active nav state */
+nav a.active {
+  color: #64ffda;
+  font-weight: 600;
+}
