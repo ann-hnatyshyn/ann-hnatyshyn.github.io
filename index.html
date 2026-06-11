@@ -1,113 +1,119 @@
+🌑 1. INDEX.HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ann Hnatyshyn | AI Automation Specialist</title>
+  <title>Ann Hnatyshyn | AI Automation</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="hero">
-    <h1>Ann Hnatyshyn</h1>
-    <h2>AI Automation & SaaS Workflow Specialist</h2>
-    <p>
-      I design AI-driven workflows that automate SaaS operations, reduce manual work, and improve system efficiency.
-    </p>
+  <div class="container">
 
-    <div class="buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#automations" class="btn">View Automations</a>
-      <a href="resume.pdf" class="btn outline">Download Resume</a>
-    </div>
-  </header>
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <h1 class="name">Ann Hnatyshyn</h1>
+      <h2 class="role">AI Automation & Workflow Specialist</h2>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      I specialize in AI workflow automation, SaaS operations, and process optimization.
-      My focus is building systems that replace repetitive manual work with structured automation using AI tools, APIs, and workflow engines.
-    </p>
-  </section>
+      <p class="tagline">
+        I build AI-driven systems that automate SaaS operations and reduce manual work.
+      </p>
 
-  <section id="skills">
-    <h2>Skills</h2>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#automations">Automations</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <div class="grid">
-      <div>
-        <h3>AI & Automation</h3>
-        <p>ChatGPT, Gemini, Zapier, workflow orchestration, SaaS automation</p>
+      <div class="links">
+        <a href="https://github.com/">GitHub</a>
+        <a href="https://linkedin.com/">LinkedIn</a>
+        <a href="resume.pdf">Resume</a>
       </div>
+    </aside>
 
-      <div>
-        <h3>Development</h3>
-        <p>Python (automation), JavaScript, REST APIs, SQL</p>
-      </div>
+    <!-- RIGHT CONTENT -->
+    <main class="content">
 
-      <div>
-        <h3>QA Systems</h3>
-        <p>Cypress, Playwright, test automation, Jira</p>
-      </div>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          AI automation and SaaS workflow specialist focused on building systems that replace manual operational work with structured AI-driven automation.
+          I design workflows using APIs, SaaS tools, and prompt-based systems to improve efficiency and reduce repetitive tasks.
+        </p>
+      </section>
 
-      <div>
-        <h3>Tools</h3>
-        <p>GitHub, Postman, Airtable, Notion, Docker (basic)</p>
-      </div>
-    </div>
-  </section>
+      <section id="experience">
+        <h2>Experience</h2>
 
-  <section id="projects">
-    <h2>Projects</h2>
+        <div class="card">
+          <h3>Tablz.com — SaaS Operations & AI Workflow Specialist</h3>
+          <span>2023 — Present</span>
+          <ul>
+            <li>Built AI-driven workflows using ChatGPT, Gemini, Zapier</li>
+            <li>Integrated SaaS APIs and webhooks for automation</li>
+            <li>Created SOPs for internal automation systems</li>
+            <li>Executed QA testing with Cypress & Playwright</li>
+          </ul>
+        </div>
 
-    <div class="card">
-      <h3>AI SaaS Workflow Automation System</h3>
-      <p>Built AI-driven automation workflows integrating APIs and SaaS tools to reduce manual operational tasks.</p>
-    </div>
+        <div class="card">
+          <h3>House of Funk — Operations Director</h3>
+          <span>2019 — 2023</span>
+          <ul>
+            <li>Built operational workflows for inventory and scheduling</li>
+            <li>Implemented digital systems for business efficiency</li>
+          </ul>
+        </div>
 
-    <div class="card">
-      <h3>Interview Scheduler</h3>
-      <p>Full-stack scheduling system with React and PostgreSQL featuring automated booking logic and testing.</p>
-    </div>
+      </section>
 
-    <div class="card">
-      <h3>ActiVi Fitness Platform</h3>
-      <p>Full-stack application with API-driven workflows and optimized backend performance.</p>
-    </div>
+      <section id="projects">
+        <h2>Projects</h2>
 
-  </section>
+        <div class="card">
+          <h3>AI SaaS Workflow System</h3>
+          <p>Automated SaaS operations using AI-driven decision workflows and API integrations.</p>
+          <span class="tags">AI • APIs • Automation</span>
+        </div>
 
-  <section id="automations">
-    <h2>Automation Workflows</h2>
+        <div class="card">
+          <h3>Interview Scheduler</h3>
+          <p>Full-stack scheduling system with automated booking logic and validation workflows.</p>
+          <span class="tags">React • PostgreSQL • Cypress</span>
+        </div>
 
-    <div class="card">
-      <h3>SaaS Ticket Routing Automation</h3>
-      <p>Automates ticket classification, routing, and processing using AI + API integrations.</p>
-    </div>
+      </section>
 
-    <div class="card">
-      <h3>QA Automation Pipeline</h3>
-      <p>Automated testing workflow using Cypress and Playwright integrated into CI processes.</p>
-    </div>
+      <section id="automations">
+        <h2>Automations</h2>
 
-    <div class="card">
-      <h3>Data Validation Workflow</h3>
-      <p>AI-assisted validation system for structured SaaS data processing and error reduction.</p>
-    </div>
+        <div class="card">
+          <h3>Ticket Routing System</h3>
+          <p>AI classifies and routes SaaS support tickets to correct workflows automatically.</p>
+        </div>
 
-  </section>
+        <div class="card">
+          <h3>QA Automation Pipeline</h3>
+          <p>Automated test execution + reporting using Cypress and CI-style workflows.</p>
+        </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: a.m.hnatyshyn@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/ann-hnatyshyn</p>
-    <p>GitHub: (add link)</p>
-  </section>
+      </section>
 
-  <footer>
-    <p>© 2026 Ann Hnatyshyn | AI Automation & Workflow Systems</p>
-  </footer>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: a.m.hnatyshyn@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/ann-hnatyshyn</p>
+      </section>
+
+    </main>
+
+  </div>
 
 </body>
 </html>
-🎨 styles.css
