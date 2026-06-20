@@ -204,10 +204,10 @@ section.visible {
 }
 
 .automation-visual img {
-  width: 20%; /* Change this from 100% to control the size */
-  max-width: 100%; /* Keeps the image responsive */
-  height: auto; /* Maintains the aspect ratio so it's not squished */
-  border-radius: 6px; /* Keep your nice rounded corners */
+  width: 100%;       /* Tells the image to fill the 40% width container perfectly */
+  max-width: 250px;  /* Puts a hard limit so it doesn't get too big on desktop */
+  height: auto;      /* Keeps the photo aspect ratio perfect so it doesn't distort */
+  border-radius: 6px;/* Gives it those nice rounded corners */
 }
 
 /* Ensure mobile responsiveness */
