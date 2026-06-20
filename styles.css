@@ -199,20 +199,15 @@ section.visible {
 
 .automation-visual {
   width: 40%;
+  display: flex; /* Added to center the image within its container */
+  justify-content: center; /* Added to center the image within its container */
 }
 
-.img-placeholder {
-  background: #0a192f;
-  border: 1px dashed #64ffda;
-  color: #8892b0;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  border-radius: 6px;
-  text-align: center;
-  padding: 10px;
+.automation-visual img {
+  width: 20%; /* Change this from 100% to control the size */
+  max-width: 100%; /* Keeps the image responsive */
+  height: auto; /* Maintains the aspect ratio so it's not squished */
+  border-radius: 6px; /* Keep your nice rounded corners */
 }
 
 /* Ensure mobile responsiveness */
