@@ -17,6 +17,7 @@ body {
 }
 
 /* NAV */
+
 .top-nav {
   position: fixed;
   top: 0;
@@ -42,6 +43,7 @@ body {
 }
 
 /* Hero Section Layout */
+
 .hero-section {
   position: relative;
   overflow: hidden;
@@ -54,6 +56,7 @@ body {
 }
 
 /* Ambient Background Glow Effect */
+
 .hero-section::before {
   content: "";
   position: absolute;
@@ -72,6 +75,7 @@ body {
 }
 
 /* Availability Badge */
+
 .badge {
   background: rgba(0, 242, 195, 0.08);
   color: #00f2c3;
@@ -86,6 +90,7 @@ body {
 }
 
 /* Bold Typography & Gradient text */
+
 .hero-container h1 {
   font-size: 3.5rem;
   font-weight: 800;
@@ -107,6 +112,7 @@ body {
 }
 
 /* Buttons and Actions */
+
 .cta-group {
   display: flex;
   gap: 1rem;
@@ -128,6 +134,7 @@ body {
 }
 
 /* LINKS */
+
 .links {
   margin-top: 40px;
   display: flex;
@@ -140,6 +147,7 @@ body {
 }
 
 /* CONTENT */
+
 .content {
   width: 100%;
   max-width: 900px;
@@ -156,11 +164,11 @@ h2 {
 }
 
 /* RESPONSIVE */
+
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
   }
-  
   .content {
     width: 100%;
   }
@@ -193,6 +201,7 @@ section.visible {
 }
 
 /* Ensure mobile responsiveness */
+
 @media (max-width: 768px) {
   .automation-card {
     flex-direction: column;
@@ -206,6 +215,7 @@ section.visible {
 }
 
 /* Section Headings */
+
 h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -217,6 +227,7 @@ h2 {
 }
 
 /* Card Grid Layout */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -225,6 +236,7 @@ h2 {
 }
 
 /* Individual Sleek Card */
+
 .card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -236,6 +248,7 @@ h2 {
 }
 
 /* Tech Tags/Badges inside cards */
+
 .card-tags {
   display: flex;
   flex-wrap: wrap;
