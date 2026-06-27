@@ -40,15 +40,6 @@ body {
   color: #f8fafc;
 }
 
-.nav-links a {
-  color: #94a3b8;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
 /* Hero Section Layout */
 .hero-section {
   position: relative;
@@ -130,15 +121,9 @@ body {
   text-decoration: none;
 }
 
-
 .btn-secondary {
   border: 1px solid rgba(148, 163, 184, 0.3);
   color: #f8fafc;
-}
-
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: #f8fafc;
 }
 
 /* LINKS */
@@ -247,14 +232,6 @@ h2 {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-}
-
-/* Card Hover Animation */
-.card:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(0, 242, 195, 0.3); /* Uses your bright teal as a subtle focus border */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* Tech Tags/Badges inside cards */
