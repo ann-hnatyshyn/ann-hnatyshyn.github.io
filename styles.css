@@ -169,46 +169,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* CARDS */
-.card {
-  background: #112240;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  background: #1b2a41;
-}
-
-.card h3 {
-  margin: 0;
-  color: #64ffda;
-}
-
-.card span {
-  font-size: 12px;
-  color: #8892b0;
-}
-
-.card p, li {
-  color: #a8b2d1;
-}
-
-.tags {
-  font-size: 12px;
-  color: #64ffda;
-}
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
   }
-
-
+  
   .content {
     width: 100%;
   }
@@ -237,55 +203,6 @@ section.visible {
 
 .contact-info a {
   color: #ffd166;
-}
-
-/* AUTOMATION LAYOUT ADJUSTMENTS */
-.section-intro {
-  color: #8892b0;
-  margin-bottom: 40px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.automation-card {
-  display: flex;
-  background: #112240;
-  padding: 30px;
-  margin-bottom: 40px;
-  border-radius: 8px;
-  gap: 30px;
-  align-items: center;
-  transition: 0.3s;
-}
-
-.automation-card:hover {
-  transform: translateY(-5px);
-  background: #1b2a41;
-}
-
-.automation-info {
-  width: 60%;
-}
-
-.tech-tags {
-  display: block;
-  font-size: 12px;
-  color: #64ffda;
-  font-family: monospace;
-  margin: 5px 0 15px 0;
-}
-
-.automation-visual {
-  width: 40%;
-  display: flex; /* Added to center the image within its container */
-  justify-content: center; /* Added to center the image within its container */
-}
-
-.automation-visual img {
-  width: 100%;       /* Tells the image to fill the 40% width container perfectly */
-  max-width: 250px;  /* Puts a hard limit so it doesn't get too big on desktop */
-  height: auto;      /* Keeps the photo aspect ratio perfect so it doesn't distort */
-  border-radius: 6px;/* Gives it those nice rounded corners */
 }
 
 /* Ensure mobile responsiveness */
