@@ -49,10 +49,6 @@ body {
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
-  color: #00f2c3;
-}
-
 /* Hero Section Layout */
 .hero-section {
   position: relative;
@@ -75,9 +71,6 @@ body {
   width: 500px;
   height: 500px;
   background: radial-gradient(circle, rgba(0, 242, 195, 0.12) 0%, rgba(79, 172, 254, 0.03) 60%, transparent 100%);
-  filter: blur(80px);
-  z-index: 0;
-  pointer-events: none;
 }
 
 .hero-container {
@@ -110,11 +103,6 @@ body {
   color: #f8fafc;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #00f2c3 0%, #4facfe 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .hero-subtitle {
   font-size: 1.25rem;
@@ -142,15 +130,6 @@ body {
   text-decoration: none;
 }
 
-.btn-primary {
-  background-color: #00f2c3;
-  color: #0b132b;
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 242, 195, 0.25);
-}
 
 .btn-secondary {
   border: 1px solid rgba(148, 163, 184, 0.3);
