@@ -17,7 +17,6 @@ body {
 }
 
 /* NAV */
-
 .top-nav {
   position: fixed;
   top: 0;
@@ -27,8 +26,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 2rem;
-  background: rgba(11, 19, 43, 0.8); /* Semi-transparent background */
-  backdrop-filter: blur(12px); /* Blurred glass effect */
+  background: rgba(11, 19, 43, 0.8);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   z-index: 100;
   box-sizing: border-box;
@@ -39,7 +38,23 @@ body {
   font-size: 1.25rem;
   letter-spacing: -0.5px;
   text-decoration: none;
-  color: #f8fafc !important;
+  color: #f8fafc;
+}
+
+/* Navigation link styling */
+nav a, .nav-link {
+  color: #d1b147; /* Matches your yellow button color */
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover, .nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Optional hover state to keep it interactive */
+nav a:hover, .nav-link:hover {
+  opacity: 0.8;
 }
 
 /* Hero Section Layout */
