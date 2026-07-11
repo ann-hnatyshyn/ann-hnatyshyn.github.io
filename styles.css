@@ -52,9 +52,10 @@ nav a:hover, .nav-link:hover {
   opacity: 0.8;
 }
 
-/* Optional hover state to keep it interactive */
-nav a:hover, .nav-link:hover {
-  opacity: 0.8;
+/* Navigation & Project Link Hover States */
+.nav-links a:hover,
+.card h3 a:hover {
+  color: #D4AF37;
 }
 
 /* Hero Section Layout */
@@ -369,11 +370,7 @@ h2 {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Navigation & Project Link Hover States */
-.nav-links a:hover,
-.card h3 a:hover {
-  color: #D4AF37;
-}
+
 
 /* Footer Contact Button Hover (Lines ~187-192) */
 .contact-btn:hover {
