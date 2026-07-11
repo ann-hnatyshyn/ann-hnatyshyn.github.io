@@ -43,7 +43,7 @@ body {
 
 /* Navigation link styling */
 nav a, .nav-link {
-  color: #d1b147; /* Matches your yellow button color */
+  color: #ffffff; /* Matches your yellow button color */
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
