@@ -1,59 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AI Workflow System</title>
-  <link rel="stylesheet" href="../styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SaaS Workflow Automation System</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
-
 <body>
-  <div class="container">
+    <div class="container">
+        <main class="content">
+            <a href="../index.html" style="color:#64ffda;">← Back</a>
+            
+            <h1>AI SaaS Workflow Automation System</h1>
 
-    <main class="content">
+            <section class="card">
+                <h2>Overview</h2>
+                <p>Automated the end-to-end reservation sync and routing process between database records, cloud applications, and Restaurant Management Systems (RMS) like OpenTable and SevenRooms—reducing manual entry and minimizing booking errors.</p>
+            </section>
 
-      <a href="../index.html" style="color:#64ffda;">← Back</a>
+            <section class="card">
+                <h2>The Problem</h2>
+                <p>When new reservations came in, operational teams had to manually input booking details into different RMS platforms (OpenTable or SevenRooms). This manual process was time-consuming, repetitive, and prone to human error, leading to delays and potential booking mix-ups.</p>
+            </section>
 
-      <h1>AI SaaS Workflow Automation System</h1>
+            <section class="card">
+                <h2>The Solution</h2>
+                <p>Designed and deployed an automated, AI-driven workflow that seamlessly captures, formats, processes, and tracks reservations across platforms in real time.</p>
+            </section>
 
-      <section class="card">
-        <h2>Problem</h2>
-        <p>
-          SaaS operations required repetitive manual processing across multiple tools, causing inefficiencies and delays.
-        </p>
-      </section>
+            <section class="card">
+                <h2>System Architecture</h2>
+                <pre style="overflow-x: auto; background: rgba(0, 0, 0, 0.2); padding: 1rem; border-radius: 4px; font-family: monospace;"><code>[Airtable Database] 
+       │
+       ▼ (Zapier Trigger)
+[JS Data Formatting]
+       │
+       ▼ (API)
+[Skyvern AI Web Automation] ────► [OpenTable / SevenRooms]
+       │
+       ▼ (Status: Success / Failure)
+[Zapier Webhook Routing]
+       ├──► [Slack Alerts (Success & Failures)]
+       └──► [Airtable (Status Tracking Tables)]</code></pre>
+            </section>
 
-      <section class="card">
-        <h2>Solution</h2>
-        <p>
-          Built an AI-driven workflow system using ChatGPT + Zapier + SaaS APIs to automate decision-making and routing processes.
-        </p>
-      </section>
+            <section class="card">
+                <h2>Key System Architecture &amp; Components</h2>
+                <ul>
+                    <li>
+                        <strong>Trigger &amp; Orchestration (Airtable &amp; Zapier):</strong>
+                        <ul>
+                            <li>Monitors Airtable for incoming reservations from the main database.</li>
+                            <li>Triggers automated "Zaps" immediately upon receiving new entries.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Custom Data Transformation:</strong>
+                        <ul>
+                            <li>Executes inline JavaScript code steps in Zapier to clean, transform, and map reservation payload data into standardized JSON structures.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>AI Web Automation (Skyvern Layer):</strong>
+                        <ul>
+                            <li>Passes formatted payload to custom workflows in Skyvern.</li>
+                            <li>Dynamically navigates and inputs reservation details into destination RMS targets (OpenTable or SevenRooms).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Feedback Loop &amp; Exception Handling:</strong>
+                        <ul>
+                            <li>Skyvern returns completion status (Finished / Failed) back to Zapier.</li>
+                            <li><strong>Slack Notifications:</strong> Sends real-time team alerts to dedicated Slack channels for immediate visibility on processing outcomes.</li>
+                            <li><strong>Airtable Auditing:</strong> Automatically logs reservation status into designated Successful or Failed tracking tables so team members know exactly which reservations require manual review or manual intervention.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-      <section class="card">
-        <h2>Architecture</h2>
-        <ul>
-          <li>Trigger: SaaS event / webhook</li>
-          <li>AI Layer: ChatGPT decision logic</li>
-          <li>Automation Layer: Zapier / API calls</li>
-          <li>Output: Routed action + logging system</li>
-        </ul>
-      </section>
+            <section class="card">
+                <h2>Tech Stack</h2>
+                <p>Zapier • JavaScript • Skyvern (AI Web Automation) • Airtable • OpenTable API/UI • SevenRooms API/UI • Slack Webhooks</p>
+            </section>
 
-      <section class="card">
-        <h2>Impact</h2>
-        <ul>
-          <li>Reduced manual operational workload</li>
-          <li>Improved workflow consistency</li>
-          <li>Reduced decision errors through structured logic</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Tech Stack</h2>
-        <p>ChatGPT, Zapier, REST APIs, SaaS tools, Webhooks</p>
-      </section>
-
-    </main>
-
-  </div>
+            <section class="card">
+                <h2>Key Impact</h2>
+                <ul>
+                    <li><strong>Operational Efficiency:</strong> Eliminates repetitive manual data entry across multiple RMS dashboards.</li>
+                    <li><strong>Error Prevention &amp; Rapid Recovery:</strong> Instantly flags failed entries in Slack and routes them to dedicated Airtable review queues for fast human fallback.</li>
+                    <li><strong>Scalability:</strong> Allows Tablz to seamlessly handle higher reservation volumes without scaling manual operations headcount.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
