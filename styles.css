@@ -43,19 +43,18 @@ body {
 
 /* Navigation link styling */
 nav a, .nav-link {
-  color: #ffffff; /* Matches your yellow button color */
+  color: #ffffff;
   text-decoration: none;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
 
-nav a:hover, .nav-link:hover {
-  opacity: 0.8;
-}
-
-/* Navigation & Project Link Hover States */
+/* Hover States for Navigation and Card Links */
+nav a:hover,
+.nav-link:hover,
 .nav-links a:hover,
 .card h3 a:hover {
-  color: #D4AF37;
+  color: #D4AF37; /* Turns yellow/gold on hover */
+  opacity: 0.8;
 }
 
 /* Hero Section Layout */
