@@ -380,3 +380,15 @@ h2 {
   color: #D4AF37;
   transform: translateY(-2px);
 }
+
+
+/* Remove bottom margin on the header */
+.contact-section h2 {
+  margin-bottom: 0.5rem; /* Reduces default browser spacing below heading */
+}
+
+/* Remove top margin on the location container */
+.contact-details {
+  margin-top: 0;
+  margin-bottom: 1.5rem; /* Keeps a clean gap above the buttons */
+}
